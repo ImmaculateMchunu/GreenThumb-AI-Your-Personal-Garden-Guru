@@ -1,141 +1,142 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/142/555/original/a_small_garden_inspiring_picture_you_can_do_at_home.jpeg?1725810283');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-}
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/142/555/original/a_small_garden_inspiring_picture_you_can_do_at_home.jpeg?1725810283');
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     color: lightgreen;
+ }
 
-a {
-    color: #885df1;
-    text-decoration: none;
-}
+ a {
+     color: #885df1;
+     text-decoration: none;
+ }
 
-a:hover {
-    text-decoration: underline;
-}
+ a:hover {
+     text-decoration: underline;
+ }
 
-.form-container {
-    text-align: center;
-    margin-top: 100px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
+ .form-container {
+     text-align: center;
+     margin-top: 100px;
+     padding: 20px;
+     background-color: rgba(0, 0, 0, 0.5);
+     border-radius: 10px;
+     max-width: 600px;
+     margin-left: auto;
+     margin-right: auto;
+ }
 
-header {
-    margin-bottom: 30px;
-    text-align: center;
-}
+ header {
+     margin-bottom: 30px;
+     text-align: center;
+ }
 
-h1 {
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 1.5;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
+ h1 {
+     font-weight: 800;
+     font-size: 36px;
+     line-height: 1.5;
+     color: darkslategrey;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+ }
 
-form {
-    padding: 30px;
-    background-color: white;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
+ form {
+     padding: 30px;
+     background-color: white;
+     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+     border-radius: 10px;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 30px;
+ }
 
-.instructions {
-    padding: 16px;
-    border: 1px solid rgba(39, 33, 66, 0.5);
-    width: 80%;
-    font-size: 16px;
-    border-radius: 50px;
-    line-height: 20px;
-    color: #272044;
-    outline: none;
-}
+ .instructions {
+     padding: 16px;
+     border: 1px solid rgba(39, 33, 66, 0.5);
+     width: 80%;
+     font-size: 16px;
+     border-radius: 50px;
+     line-height: 20px;
+     color: #272044;
+     outline: none;
+ }
 
-.instructions:focus {
-    border-color: #885df1;
-}
+ .instructions:focus {
+     border-color: #885df1;
+ }
 
-.submit-button {
-    background: #885df1;
-    color: white;
-    border: none;
-    width: 150px;
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 14px 24px;
-    cursor: pointer;
-}
+ .submit-button {
+     background: darkolivegreen;
+     color: white;
+     border: none;
+     width: 150px;
+     font-size: 16px;
+     border-radius: 50px;
+     padding: 14px 24px;
+     cursor: pointer;
+ }
 
-.submit-button:hover {
-    background-color: #7643d4;
-}
+ .submit-button:hover {
+     background-color: lightgreen;
+ }
 
-.hint {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 14px;
-    margin-top: 10px;
-}
+ .hint {
+     color: rgba(255, 255, 255, 0.8);
+     font-size: 14px;
+     margin-top: 10px;
+ }
 
-#garden-tip {
-    font-size: 16px;
-    background-color: #fff;
-    color: #272044;
-    padding: 20px;
-    line-height: 1.8;
-    border-left: 3px solid #885df1;
-    box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
-    margin: 0 auto;
-    max-width: 600px;
-    border-radius: 10px;
-    display: none;
-}
-.generating {
-    color: #885df1;
-    font-style: italic;
-    font-size: 14px;
-}
+ #garden-tip {
+     font-size: 16px;
+     background-color: #fff;
+     color: #272044;
+     padding: 20px;
+     line-height: 1.8;
+     border-left: 3px solid #885df1;
+     box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+     margin: 0 auto;
+     max-width: 600px;
+     border-radius: 10px;
+     display: none;
+ }
 
-.error {
-    color: red;
-    font-weight: bold;
-}
+ .generating {
+     color: #885df1;
+     font-style: italic;
+     font-size: 14px;
+ }
 
-footer {
-    text-align: center;
-    font-size: 13px;
-    margin-top: 30px;
-    color: white;
-}
+ .error {
+     color: red;
+     font-weight: bold;
+ }
 
-footer a {
-    color: #885df1;
-}
+ footer {
+     text-align: center;
+     font-size: 13px;
+     margin-top: 30px;
+     color: purple;
+ }
 
-footer a:hover {
-    color: #b0a6ff;
-}
+ footer a {
+     color: #885df1;
+ }
 
-.generating {
-    animation: blink-animation 1s steps(5, start) infinite;
-}
+ footer a:hover {
+     color: #b0a6ff;
+ }
 
-@keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
-}
+ .generating {
+     animation: blink-animation 1s steps(5, start) infinite;
+ }
+
+ @keyframes blink-animation {
+     to {
+         visibility: hidden;
+     }
+ }
