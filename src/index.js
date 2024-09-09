@@ -34,3 +34,5 @@ function handleError(error) {
 
 let gardenFormElement = document.querySelector("#garden-tip-generator-form");
 gardenFormElement.addEventListener("submit", generateGardenTip);
+
+
