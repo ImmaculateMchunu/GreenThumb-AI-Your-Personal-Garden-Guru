@@ -1,19 +1,19 @@
-document.getElementById('generateTipBtn').addEventListener('click', async function() {
-    const tipOutput = document.getElementById('tipOutput');
-    tipOutput.innerHTML = "Generating tip..."; 
+function generateGardenTip(event) {
+  event.preventDefault();
 
-    const gardeningTips = [
-        "Water your plants early in the morning to avoid evaporation.",
-        "Plant herbs in containers to keep them under control.",
-        "Add compost to enrich the soil for better plant growth.",
-        "Use coffee grounds as a natural fertilizer for your plants.",
-        "Keep an eye out for pests like aphids, and remove them early."
-    ];
+  let instructionsInput = document.querySelector("#user-instructions");
+  let apiKey = "b1a0o1ft9108d6b76f71c2fa34c10e16";
+  let context = 
+    "You are an expert gardener with a passion for helping people grow small plants, flowers, and vegetables. Your mission is to generate a brief and helpful garden tip using basic HTML. Each tip should be 1-2 sentences long and easy to understand. Keep the language simple and practical. Sign the tip with 'GreenThumb AI' inside a <strong> element at the end of the tip.";
+  let prompt = `User instructions: Generate a Garden tip about plants ${instructionsInput.value}`;
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-    setTimeout(function () {
-        const randomTip = gardeningTips[Math.floor(Math.random() * gardeningTips.length)];
-        tipOutput.innerHTML = randomTip;
-    }, 1000);
-});
+  let gardenTipElement = document.querySelector("#Garden-Tip");
+  gardenTipElementElement.classList.remove("hidden");
+  gardenTipElementElement.innerHTML = `<div class="generating"> Generating a Gadern tip ${instructionsInput.value}</div>`;
 
+  axios.get(apiURL).then(displayGardenTip);
+}
 
+let gardenFormElement = document.querySelector("#Gadern-tip-generator-form");
+gardenFormElement.addEventListener("submit", generateGardenTip);

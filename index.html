@@ -2,31 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Small Garden Tips Generator😊🌱</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>GreenThumb AI: Your Personal Garden Guru</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>AI Small Garden Tips Generator</h1>
-        <p>Get tips on growing small plants, flowers, and vegetables in your garden!</p>
+    <header>
+        <h1>GreenThumb AI: Your Personal Garden Guru 😊🌱 </h1>
+    </header>
 
-        <div class="generator-box">
-            <button id="generateTipBtn">Generate Garden Tip</button>
-            <div id="tipOutput" class="tip-output"></div>
+    <main>
+        <div class="form-container">
+            <form id="garden-tip-generator-form">
+                <input type="text" placeholder="Enter the garden tip" autofocus required autocomplete="off"
+                    class="instructions" id="user-instructions" />
+                <input type="submit" class="submit-button" />
+            </form>
+            <div class="hint">i.e: vegetables, flowers or plants</div>
         </div>
-    </div>
+    </main>
 
     <footer>
         <p>Created by Immaculate Mchunu</p>
-        <a href="https://github.com/ImmaculateMchunu/ImmaculateMchunu.git" target="_blank">GitHub Profile</a> |
+        <a href="https://github.com/Boocymchunu" target="_blank">GitHub Profile</a> |
         <a href="https://github.com/Boocymchunu/small-garden-tips" target="_blank">Open-source Code</a> |
-        <a href="https://immacutech.netlify.app/" target="_blank">Hosted on Netlify</a>
+        <a href="https://netlify.com/" target="_blank">Hosted on Netlify</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="src/index.js"></script>
 </body>
 
 </html>
